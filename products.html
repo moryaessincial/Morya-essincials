@@ -7,54 +7,74 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Morya Essentials</div>
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
-    </header>
-    <nav id="menu" class="menu-overlay">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="trust.html">Trust</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <main class="products">
-        <div class="product-card">
-            <img src="https://picsum.photos/300/200?random=1" alt="Pure Kapoor">
-            <h3>Pure Kapoor</h3>
-            <p>Authentic Kapoor for daily puja and rituals.</p>
-            <input type="number" min="1" value="1" class="quantity">
-            <button class="btn order-btn" onclick="openOrderForm('Pure Kapoor')">Order Now</button>
-        </div>
-        <div class="product-card">
-            <img src="https://picsum.photos/300/200?random=2" alt="Sacred Kapoor Blend">
-            <h3>Sacred Kapoor Blend</h3>
-            <p>Special blend for enhanced spiritual experiences.</p>
-            <input type="number" min="1" value="1" class="quantity">
-            <button class="btn order-btn" onclick="openOrderForm('Sacred Kapoor Blend')">Order Now</button>
-        </div>
-        <!-- Add more cards as needed -->
-    </main>
-    <div id="order-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeOrderForm()">&times;</span>
-            <h2>Order Form</h2>
-            <form action="mailto:yourgmail@gmail.com" method="post" enctype="text/plain">
-                <label>Full Name: <input type="text" name="Full Name" required></label>
-                <label>Mobile Number: <input type="tel" name="Mobile Number" required></label>
-                <label>Full Address: <textarea name="Full Address" required></textarea></label>
-                <label>Product Name: <input type="text" id="product-name" name="Product Name" readonly></label>
-                <label>Quantity: <input type="number" id="quantity" name="Quantity" min="1" required></label>
-                <button type="submit" class="btn">Submit Order</button>
-            </form>
-        </div>
+
+<header>
+    <div class="logo">Morya Essentials</div>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+</header>
+
+<nav id="menu" class="menu-overlay">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="trust.html">Trust</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main class="products">
+
+    <!-- PRODUCT 1 -->
+    <div class="product-card">
+        <img src="https://picsum.photos/300/200?random=1" alt="Mandir Grade Kapoor">
+        <h3>Mandir Grade Kapoor</h3>
+        <p>Premium quality kapoor specially made for temples. Burns clean with strong divine fragrance.</p>
+        <input type="number" min="1" value="1" class="quantity">
+        <button class="btn order-btn" onclick="openOrderForm('Mandir Grade Kapoor')">Order Now</button>
     </div>
-    <footer>
-        <p>Morya Essentials</p>
-        <p>Email: info@moryaessentials.com | Phone: +91-1234567890</p>
-    </footer>
-    <script src="script.js"></script>
+
+    <!-- PRODUCT 2 -->
+    <div class="product-card">
+        <img src="https://picsum.photos/300/200?random=2" alt="Mandir Grade Kapoor">
+        <h3>Mandir Grade Kapoor</h3>
+        <p>Premium quality kapoor specially made for temples. Burns clean with strong divine fragrance.</p>
+        <input type="number" min="1" value="1" class="quantity">
+        <button class="btn order-btn" onclick="openOrderForm('Mandir Grade Kapoor')">Order Now</button>
+    </div>
+
+    <!-- PRODUCT 3 -->
+    <div class="product-card">
+        <img src="https://picsum.photos/300/200?random=3" alt="Mandir Grade Kapoor">
+        <h3>Mandir Grade Kapoor</h3>
+        <p>Premium quality kapoor specially made for temples. Burns clean with strong divine fragrance.</p>
+        <input type="number" min="1" value="1" class="quantity">
+        <button class="btn order-btn" onclick="openOrderForm('Mandir Grade Kapoor')">Order Now</button>
+    </div>
+
+</main>
+
+<div id="order-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeOrderForm()">&times;</span>
+        <h2>Order Form</h2>
+        <form action="mailto:yourgmail@gmail.com" method="post" enctype="text/plain">
+            <label>Full Name: <input type="text" name="Full Name" required></label>
+            <label>Mobile Number: <input type="tel" name="Mobile Number" required></label>
+            <label>Full Address: <textarea name="Full Address" required></textarea></label>
+            <label>Product Name: <input type="text" id="product-name" name="Product Name" readonly></label>
+            <label>Quantity: <input type="number" id="quantity" name="Quantity" min="1" required></label>
+            <button type="submit" class="btn">Submit Order</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>Morya Essentials</p>
+    help.moryatraders@gmail.com | Phone: +91-8767231315</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
