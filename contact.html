@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morya Essentials - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Morya Essentials</div>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </header>
+    <nav id="menu" class="menu-overlay">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="trust.html">Trust</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="contact">
+        <h2>Contact Us</h2>
+        <form action="mailto:info@moryaessentials.com" method="post" enctype="text/plain">
+            <label>Name: <input type="text" name="Name" required></label>
+            <label>Email: <input type="email" name="Email" required></label>
+            <label>Message: <textarea name="Message" required></textarea></label>
+            <button type="submit" class="btn">Send</button>
+        </form>
+        <p>Email: info@moryaessentials.com</p>
+        <a href="https://wa.me/911234567890?text=Hello%20Morya%20Essentials" class="btn whatsapp">WhatsApp Us</a>
+        <div class="business-info">
+            <p>Address: 123 Sacred Lane, Mumbai, India</p>
+            <p>Phone: +91-1234567890</p>
+        </div>
+    </main>
+    <footer>
+        <p>Morya Essentials</p>
+        <p>Email: info@moryaessentials.com | Phone: +91-1234567890</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
