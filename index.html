@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morya Essentials - Pure by Faith</title>
+    <meta name="description" content="Premium Puja & Kapoor products for sacred rituals. Explore our collection and connect with pure faith.">
+    <meta name="keywords" content="Kapoor, Puja essentials, spiritual products, pure faith, Morya Essentials">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background: #ffffff; color: #333; line-height: 1.6; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 500; }
+        a { color: #6a0dad; text-decoration: none; transition: color 0.3s; }
+        a:hover { color: #9b59b6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .section { padding: 30px 0; }
+        /* Header */
+        .header { display: flex; justify-content: space-between; align-items: center; padding: 20px; background: #ffffff; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #e0e0e0; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: #6a0dad; }
+        .hamburger { font-size: 1.5rem; cursor: pointer; color: #6a0dad; }
+        .menu { position: fixed; top: 0; right: -100%; width: 250px; height: 100%; background: #f3e5f5; transition: right 0.3s ease; z-index: 1000; padding: 50px 20px; }
+        .menu.open { right: 0; }
+        .menu ul { list-style: none; }
+        .menu li { margin: 20px 0; }
+        .menu a { color: #333; font-weight: 500; }
+        /* Hero */
+        .hero { height: 50vh; background: #ffffff; display: flex; align-items: center; justify-content: center; text-align: center; }
+        .hero-content { max-width: 600px; }
+        .hero h1 { color: #6a0dad; margin-bottom: 10px; }
+        .hero p { color: #555; margin-bottom: 20px; }
+        .cta-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .btn { padding: 12px 20px; background: #6a0dad; color: #ffffff; border: none; border-radius: 5px; cursor: pointer; font-weight: 500; }
+        /* Sections */
+        .intro { text-align: center; background: #ffffff; }
+        .categories { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .category { text-align: center; padding: 15px; border: 1px solid #e0e0e0; border-radius: 5px; }
+        .category img { width: 100%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 10px; }
+        .trust { display: flex; justify-content: space-around; flex-wrap: wrap; background: #f3e5f5; padding: 20px; }
+        .trust-item { text-align: center; flex: 1 1 150px; }
+        .cta-strip { background: #6a0dad; color: #ffffff; text-align: center; padding: 20px; }
+        /* Footer */
+        .footer { background: #ffffff; padding: 15px 0; text-align: center; border-top: 1px solid #e0e0e0; }
+        .footer p { color: #6a0dad; font-size: 0.9rem; }
+        /* Responsive */
+        @media (max-width: 768px) { .hero { height: 40vh; } .hero-content { max-width: 100%; } .cta-buttons { flex-direction: column; } .categories { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Morya Essentials</div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Pure Kapoor for Sacred Rituals</h1>
+            <p>Pure by Faith</p>
+            <div class="cta-buttons">
+                <button class="btn" onclick="window.location.href='products.html'">View Products</button>
+                <button class="btn" onclick="window.location.href='contact.html'">Contact Us</button>
+            </div>
+        </div>
+    </section>
+    <section class="section intro">
+        <div class="container">
+            <h2>Welcome to Morya Essentials</h2>
+            <p>Discover premium Kapoor products rooted in ancient traditions, designed for pure devotion.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2>Product Categories</h2>
+            <div class="categories">
+                <div class="category">
+                    <img src="https://via.placeholder.com/200x150?text=Pure+Kapoor+Tablets" alt="Pure Kapoor Tablets">
+                    <h3>Pure Kapoor Tablets</h3>
+                </div>
+                <div class="category">
+                    <img src="https://via.placeholder.com/200x150?text=Loose+Kapoor" alt="Loose Kapoor">
+                    <h3>Loose Kapoor</h3>
+                </div>
+                <div class="category">
+                    <img src="https://via.placeholder.com/200x150?text=Mandir+Grade+Kapoor" alt="Mandir Grade Kapoor">
+                    <h3>Mandir Grade Kapoor</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="trust">
+        <div class="container">
+            <div class="trust-item">
+                <h3>Purity</h3>
+                <p>100% natural ingredients.</p>
+            </div>
+            <div class="trust-item">
+                <h3>Tradition</h3>
+                <p>Rooted in ancient rituals.</p>
+            </div>
+            <div class="trust-item">
+                <h3>Quality</h3>
+                <p>Hygienic and trusted.</p>
+            </div>
+        </div>
+    </section>
+    <section class="cta-strip">
+        <div class="container">
+            <h2>Ready to Connect?</h2>
+            <button class="btn" onclick="window.location.href='contact.html'">Get in Touch</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Morya Essentials. Pure by Faith.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() { document.getElementById('menu').classList.toggle('open'); }
+    </script>
+</body>
+</html>
