@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Morya Essentials</title>
+    <meta name="description" content="Explore our premium Kapoor products, crafted with purity and trust for sacred rituals.">
+    <meta name="keywords" content="Kapoor products, pure ingredients, spiritual essentials, Morya Essentials">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background: #ffffff; color: #333; line-height: 1.6; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 500; }
+        a { color: #6a0dad; text-decoration: none; transition: color 0.3s; }
+        a:hover { color: #9b59b6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .section { padding: 30px 0; }
+        /* Sticky Nav */
+        .nav { position: sticky; top: 0; background: #ffffff; padding: 15px 20px; border-bottom: 1px solid #e0e0e0; z-index: 100; }
+        .nav ul { display: flex; list-style: none; gap: 20px; justify-content: center; }
+        .nav a { color: #333; font-weight: 500; }
+        .nav a.active { color: #6a0dad; font-weight: 700; }
+        /* Products */
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .product-card { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 5px; padding: 15px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .product-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; margin-bottom: 10px; }
+        .badges { display: flex; justify-content: center; gap: 10px; margin: 10px 0; }
+        .badge { background: #6a0dad; color: #fff; padding: 5px 10px; border-radius: 3px; font-size: 0.8rem; }
+        .assurance { background: #f3e5f5; padding: 20px; text-align: center; margin: 20px 0; }
+        /* FAQ */
+        .faq { background: #ffffff; }
+        .faq-item { border-bottom: 1px solid #e0e0e0; padding: 15px 0; }
+        .faq-question { cursor: pointer; font-weight: 500; color: #6a0dad; }
+        .faq-answer { display: none; margin-top: 10px; }
+        /* Responsive */
+        @media (max-width: 768px) { .nav ul { flex-direction: column; gap: 10px; } .products-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <h1>Our Premium Kapoor Products</h1>
+            <p>Crafted with purity and trust for your sacred rituals.</p>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200?text=Pure+Kapoor+Tablets" alt="Pure Kapoor Tablets">
+                    <h3>Pure Kapoor Tablets</h3>
+                    <p>Handcrafted for purity and devotion.</p>
+                    <p><strong>Usage:</strong> Daily puja and home rituals.</p>
+                    <div class="badges">
+                        <span class="badge">100% Pure</span>
+                        <span class="badge">Hygienic</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200?text=Loose+Kapoor" alt="Loose Kapoor">
+                    <h3>Loose Kapoor</h3>
+                    <p>Natural and aromatic for enhanced spirituality.</p>
+                    <p><strong>Usage:</strong> Temple offerings and festivals.</p>
+                    <div class="badges">
+                        <span class="badge">Strong Aroma</span>
+                        <span class="badge">Trusted</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200?text=Mandir+Grade+Kapoor" alt="Mandir Grade Kapoor">
+                    <h3>Mandir Grade Kapoor</h3>
+                    <p>Premium quality for sacred spaces.</p>
+                    <p><strong>Usage:</strong> Mandir and special ceremonies.</p>
+                    <div class="badges">
+                        <span class="badge">Pure Ingredients</span>
+                        <span class="badge">Hygienic</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="assurance">
+        <div class="container">
+            <h2>Purity Assurance</h2>
+            <p>Our products undergo rigorous quality checks to ensure 100% purity, strong aroma, and hygienic packaging for your peace of mind.</p>
+        </div>
+    </section>
+    <section class="section faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">What makes our Kapoor pure?</div>
+                <div class="faq-answer">We source only natural ingredients and follow traditional methods.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">Is it safe for daily use?</div>
+                <div class="faq-answer">Yes, our hygienic packaging ensures freshness and safety.</div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function toggleFAQ(el) { el.nextElementSibling.style.display = el.nextElementSibling.style.display === 'block' ? 'none' : 'block'; }
+    </script>
+</body>
+</html>
