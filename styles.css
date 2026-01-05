@@ -323,23 +323,3 @@ footer {
 .product-card img {
     border-radius: 12px;
 }
-.ayurvedic-bg {
-    position: relative;
-    background: linear-gradient(
-        135deg,
-        #f5f8f2 0%,
-        #eaf2e6 40%,
-        #fdfcf8 100%
-    );
-    padding: 4rem 1.5rem;
-}
-
-.ayurvedic-bg::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image:
-        radial-gradient(rgba(56, 142, 60, 0.08) 1px, transparent 1px);
-    background-size: 24px 24px;
-    pointer-events: none;
-}
