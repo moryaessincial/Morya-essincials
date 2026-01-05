@@ -5,12 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morya Essentials - Trust</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- ============================= -->
+    <!-- PREMIUM TRUST ADD-ON STYLES -->
+    <!-- ============================= -->
+    <style>
+        .trust-premium {
+            padding: 3rem 1rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .trust-premium h3 {
+            text-align: center;
+            color: var(--text-accent);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .trust-premium p {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            font-size: 1.05rem;
+        }
+
+        .trust-premium-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+
+        .trust-premium-card {
+            background: var(--bg-main);
+            border: 1px solid var(--border-main);
+            padding: 2rem;
+            border-radius: 14px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .trust-premium-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+        }
+
+        .trust-premium-icon {
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .trust-strip {
+            margin-top: 4rem;
+            background: linear-gradient(135deg, var(--btn-main), var(--text-accent));
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+
+        .trust-strip h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1.6rem;
+        }
+
+        .trust-strip p {
+            max-width: 700px;
+            margin: auto;
+            opacity: 0.95;
+        }
+    </style>
 </head>
+
 <body>
+
+    <!-- ORIGINAL HEADER (UNCHANGED) -->
     <header>
         <div class="logo">Morya Essentials</div>
         <button class="hamburger" onclick="toggleMenu()">☰</button>
     </header>
+
+    <!-- ORIGINAL MENU (UNCHANGED) -->
     <nav id="menu" class="menu-overlay">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -20,6 +94,8 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- ORIGINAL CONTENT (UNCHANGED) -->
     <main class="trust">
         <h2>Why Trust Morya Essentials?</h2>
         <div class="trust-badges">
@@ -29,10 +105,58 @@
             <div class="badge">Hygienic Packaging</div>
         </div>
     </main>
+
+    <!-- ============================= -->
+    <!-- PREMIUM CONTENT (ADDED ONLY) -->
+    <!-- ============================= -->
+    <section class="trust-premium">
+        <h3>Built on Faith & Purity</h3>
+        <p>
+            Morya Essentials stands for devotion, purity, and uncompromising quality.
+            Every product is crafted to honor sacred rituals and spiritual traditions.
+        </p>
+
+        <div class="trust-premium-grid">
+            <div class="trust-premium-card">
+                <div class="trust-premium-icon">🛕</div>
+                <h4>Temple Grade Quality</h4>
+                <p>Suitable for homes, temples, and religious ceremonies.</p>
+            </div>
+
+            <div class="trust-premium-card">
+                <div class="trust-premium-icon">🌿</div>
+                <h4>Pure & Natural</h4>
+                <p>Clean burning Kapoor with divine fragrance and no harmful additives.</p>
+            </div>
+
+            <div class="trust-premium-card">
+                <div class="trust-premium-icon">🔥</div>
+                <h4>Smokeless Experience</h4>
+                <p>Minimal smoke for peaceful and focused prayer.</p>
+            </div>
+
+            <div class="trust-premium-card">
+                <div class="trust-premium-icon">📦</div>
+                <h4>Sealed Packaging</h4>
+                <p>Hygienically packed to maintain freshness and purity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM STRIP -->
+    <section class="trust-strip">
+        <h4>Pure by Faith</h4>
+        <p>
+            Trusted by families who believe that devotion deserves only the purest offerings.
+        </p>
+    </section>
+
+    <!-- ORIGINAL FOOTER (UNCHANGED) -->
     <footer>
         <p>Morya Essentials</p>
         <p>Email: help.moryatraders.com | Phone: +91- 8767231315</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
