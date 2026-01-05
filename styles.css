@@ -323,3 +323,19 @@ footer {
 .product-card img {
     border-radius: 12px;
 }
+/* BODY TEXT */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* ALL HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 1.5px;
+}
+
+/* BRAND / LOGO TEXT */
+.brand-name, .logo, .site-title {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 2px;
+}
