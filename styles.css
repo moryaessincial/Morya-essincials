@@ -285,3 +285,41 @@ footer {
 .btn:hover {
     background: var(--btn-hover);
 }
+/* ============================= */
+/* AYURVEDIC PRODUCT SECTION BG */
+/* ============================= */
+
+.products {
+    position: relative;
+    padding: 3rem 1.5rem;
+    background: 
+        linear-gradient(
+            135deg,
+            #f6f9f4 0%,
+            #eef5ec 40%,
+            #fdfcf8 100%
+        );
+}
+
+/* soft herbal texture effect */
+.products::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: 
+        radial-gradient(rgba(34, 139, 34, 0.05) 1px, transparent 1px);
+    background-size: 22px 22px;
+    pointer-events: none;
+}
+
+/* product card uplift on ayurvedic bg */
+.product-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* images more premium */
+.product-card img {
+    border-radius: 12px;
+}
