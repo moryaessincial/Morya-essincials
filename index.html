@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morya Essentials - Home</title>
-    <link rel="stylesheet"href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
         <div class="logo">Morya Essentials</div>
         <button class="hamburger" onclick="toggleMenu()">☰</button>
     </header>
+
     <nav id="menu" class="menu-overlay">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -20,6 +22,7 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
     <main class="home-hero">
         <h1>Pure Kapoor for Sacred Rituals</h1>
         <p>Pure by Faith</p>
@@ -28,10 +31,77 @@
             <a href="contact.html" class="btn">Contact Us</a>
         </div>
     </main>
+
     <footer>
         <p>Morya Essentials</p>
         <p>Email: help.moryatraders@gmail.com | Phone: +91-8767231315</p>
     </footer>
+
+    <!-- ============================= -->
+    <!-- AUTO THEME JS (ADDED ONLY) -->
+    <!-- ============================= -->
+    <script>
+        const themes = [
+            {
+                bgMain: "#ffffff",
+                textMain: "#333333",
+                textAccent: "#6A0DAD",
+                btnMain: "#6A0DAD",
+                btnHover: "#5a0b9a",
+                btnText: "#ffffff",
+                borderMain: "#6A0DAD"
+            },
+            {
+                bgMain: "#fff3e0",
+                textMain: "#e65100",
+                textAccent: "#f57c00",
+                btnMain: "#f57c00",
+                btnHover: "#ef6c00",
+                btnText: "#ffffff",
+                borderMain: "#ffcc80"
+            },
+            {
+                bgMain: "#e8f5e9",
+                textMain: "#1b5e20",
+                textAccent: "#43a047",
+                btnMain: "#43a047",
+                btnHover: "#2e7d32",
+                btnText: "#ffffff",
+                borderMain: "#c8e6c9"
+            },
+            {
+                bgMain: "#e3f2fd",
+                textMain: "#0d47a1",
+                textAccent: "#42a5f5",
+                btnMain: "#42a5f5",
+                btnHover: "#1e88e5",
+                btnText: "#ffffff",
+                borderMain: "#bbdefb"
+            },
+            {
+                bgMain: "#fff8f0",
+                textMain: "#4e342e",
+                textAccent: "#5d4037",
+                btnMain: "#5d4037",
+                btnHover: "#3e2723",
+                btnText: "#ffffff",
+                borderMain: "#d7ccc8"
+            }
+        ];
+
+        const hour = new Date().getHours();
+        const theme = themes[hour % themes.length];
+        const root = document.documentElement.style;
+
+        root.setProperty("--bg-main", theme.bgMain);
+        root.setProperty("--text-main", theme.textMain);
+        root.setProperty("--text-accent", theme.textAccent);
+        root.setProperty("--btn-main", theme.btnMain);
+        root.setProperty("--btn-hover", theme.btnHover);
+        root.setProperty("--btn-text", theme.btnText);
+        root.setProperty("--border-main", theme.borderMain);
+    </script>
+
     <script src="script.js"></script>
 </body>
 </html>
