@@ -5,7 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morya Essentials - Products</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- ============================= -->
+    <!-- PREMIUM PRODUCTS ADD-ON STYLES -->
+    <!-- ============================= -->
+    <style>
+        .products-intro {
+            text-align: center;
+            padding: 3rem 1rem 1rem;
+        }
+
+        .products-intro h2 {
+            color: var(--text-accent);
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .products-intro p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 1.05rem;
+        }
+
+        .product-card {
+            border-radius: 14px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: var(--bg-main);
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 35px rgba(0,0,0,0.08);
+        }
+
+        .product-badge {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            font-size: 0.75rem;
+            border-radius: 20px;
+            border: 1px solid var(--border-main);
+            color: var(--text-accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .product-trust {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+        }
+
+        .product-trust span {
+            border: 1px dashed var(--border-main);
+            padding: 0.3rem 0.7rem;
+            border-radius: 20px;
+        }
+
+        .products-strip {
+            margin: 4rem 0 2rem;
+            padding: 2.5rem 1rem;
+            text-align: center;
+            background: linear-gradient(135deg, var(--btn-main), var(--text-accent));
+            color: white;
+        }
+
+        .products-strip h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.6rem;
+        }
+
+        .products-strip p {
+            max-width: 700px;
+            margin: auto;
+            opacity: 0.95;
+        }
+    </style>
 </head>
+
 <body>
 
 <header>
@@ -23,10 +101,23 @@
     </ul>
 </nav>
 
+<!-- ============================= -->
+<!-- PREMIUM INTRO (ADDED) -->
+<!-- ============================= -->
+<section class="products-intro">
+    <h2>Our Premium Kapoor Range</h2>
+    <p>
+        Discover pure, temple-grade Kapoor crafted with devotion,
+        trusted for daily puja, temples, and sacred rituals.
+    </p>
+</section>
+
+<!-- ORIGINAL PRODUCTS (UNCHANGED) -->
 <main class="products">
 
     <!-- Mandir Grade Kapoor -->
     <div class="product-card">
+        <span class="product-badge">Temple Grade</span>
         <img src="images/IMG-20260104-WA0006.jpg" alt="Mandir Grade Kapoor">
         <h3>Mandir Grade Kapoor</h3>
         <p>
@@ -34,12 +125,20 @@
             Burns clean with strong divine fragrance.
             Best for aarti & large mandir use.
         </p>
+
+        <div class="product-trust">
+            <span>🛕 Puja Safe</span>
+            <span>🔥 Clean Burn</span>
+            <span>⭐ Premium</span>
+        </div>
+
         <input type="number" min="1" value="1" class="quantity">
         <button class="btn order-btn" onclick="openOrderForm('Mandir Grade Kapoor')">Order Now</button>
     </div>
 
     <!-- Daily Puja Kapoor -->
     <div class="product-card">
+        <span class="product-badge">Daily Puja</span>
         <img src="images/IMG-20260104-WA0010.jpg" alt="Daily Puja Kapoor">
         <h3>Daily Puja Kapoor</h3>
         <p>
@@ -47,12 +146,20 @@
             Light fragrance with minimum smoke.
             Ideal for daily worship.
         </p>
+
+        <div class="product-trust">
+            <span>🌿 Pure</span>
+            <span>🙏 Home Puja</span>
+            <span>🔥 Low Smoke</span>
+        </div>
+
         <input type="number" min="1" value="1" class="quantity">
         <button class="btn order-btn" onclick="openOrderForm('Daily Puja Kapoor')">Order Now</button>
     </div>
 
     <!-- Medical Kapoor -->
     <div class="product-card">
+        <span class="product-badge">Medicinal</span>
         <img src="images/IMG-20260104-WA0008.jpg" alt="Medical Kapoor">
         <h3>Medical Kapoor</h3>
         <p>
@@ -60,12 +167,31 @@
             Used for ayurvedic & medical purposes.
             Strong aroma and fast effect.
         </p>
+
+        <div class="product-trust">
+            <span>🌿 Ayurvedic</span>
+            <span>⚕️ Medical Use</span>
+            <span>⭐ High Purity</span>
+        </div>
+
         <input type="number" min="1" value="1" class="quantity">
         <button class="btn order-btn" onclick="openOrderForm('Medical Kapoor')">Order Now</button>
     </div>
 
 </main>
 
+<!-- ============================= -->
+<!-- PREMIUM STRIP (ADDED) -->
+<!-- ============================= -->
+<section class="products-strip">
+    <h3>Pure by Faith</h3>
+    <p>
+        Each variety of Kapoor is crafted to preserve purity,
+        fragrance, and spiritual significance.
+    </p>
+</section>
+
+<!-- ORIGINAL MODAL (UNCHANGED) -->
 <div id="order-modal" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeOrderForm()">&times;</span>
