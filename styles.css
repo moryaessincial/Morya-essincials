@@ -339,15 +339,23 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Cinzel', serif;
   letter-spacing: 2px;
 }
-.tagline-divider {
-  width: 70px;
-  height: 2px;
+/* TAGLINE DIVIDER – FORCE APPLY */
+.home-hero p {
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.home-hero p::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
   margin: 14px auto 0;
-  background: linear-gradient(
-    to right,
-    transparent,
-    currentColor,
-    transparent
-  );
+  background: currentColor;
   opacity: 0.4;
 }
