@@ -339,3 +339,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Cinzel', serif;
   letter-spacing: 2px;
 }
+.tagline-divider {
+  width: 70px;
+  height: 2px;
+  margin: 14px auto 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    currentColor,
+    transparent
+  );
+  opacity: 0.4;
+}
