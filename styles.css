@@ -440,3 +440,28 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px;
   }
 }
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.hero-buttons a {
+  width: 220px;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff8a00, #ff6a00);
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(255, 138, 0, 0.35);
+  transition: all 0.3s ease;
+}
+
+.hero-buttons a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 35px rgba(255, 138, 0, 0.5);
+}
