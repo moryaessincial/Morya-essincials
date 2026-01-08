@@ -109,7 +109,7 @@ main {
 /* ============================= */
 .home-hero {
     text-align: center;
-    min-height: auto; /* scroll fix */
+    min-height: auto;
     padding: 50px 16px 20px;
     display: flex;
     flex-direction: column;
@@ -237,10 +237,10 @@ footer {
         font-size: 1.6rem;
     }
 }
+
 /* ============================= */
 /* CONTACT PAGE – PREMIUM LOOK */
 /* ============================= */
-
 .contact-section {
     max-width: 720px;
     margin: 40px auto;
@@ -250,112 +250,9 @@ footer {
     box-shadow: 0 18px 45px rgba(0,0,0,0.08);
 }
 
-.contact-section h1,
-.contact-section h2 {
-    font-family: 'Playfair Display', serif;
-    color: #6A0DAD;
-    margin-bottom: 8px;
-}
-
-.contact-section p {
-    font-size: 0.95rem;
-    color: #555;
-    margin-bottom: 20px;
-}
-
 /* ============================= */
-/* FORM */
+/* ORDER FORM – MOBILE FIX (FINAL) */
 /* ============================= */
-.contact-section form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
-}
-
-.contact-section label {
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: #444;
-}
-
-.contact-section input,
-.contact-section textarea {
-    width: 100%;
-    padding: 14px 14px;
-    border-radius: 12px;
-    border: 1px solid #ddd;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.9rem;
-    outline: none;
-    transition: all 0.25s ease;
-    background: #fafafa;
-}
-
-.contact-section input:focus,
-.contact-section textarea:focus {
-    border-color: #6A0DAD;
-    background: #fff;
-    box-shadow: 0 0 0 3px rgba(106,13,173,0.12);
-}
-
-.contact-section textarea {
-    min-height: 110px;
-    resize: none;
-}
-
-/* ============================= */
-/* SEND BUTTON */
-/* ============================= */
-.contact-section button,
-.contact-section input[type="submit"] {
-    margin-top: 10px;
-    padding: 14px;
-    border-radius: 14px;
-    border: none;
-    background: linear-gradient(135deg, #ff8a00, #ff6a00);
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    box-shadow: 0 12px 30px rgba(255,138,0,0.35);
-    transition: all 0.3s ease;
-}
-
-.contact-section button:hover,
-.contact-section input[type="submit"]:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 18px 40px rgba(255,138,0,0.45);
-}
-
-/* ============================= */
-/* CONTACT INFO */
-/* ============================= */
-.contact-info {
-    margin-top: 28px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(0,0,0,0.08);
-    font-size: 0.9rem;
-    color: #444;
-}
-
-.contact-info strong {
-    color: #6A0DAD;
-}
-
-/* ============================= */
-/* WHATSAPP LINK */
-/* ============================= */
-.contact-info a {
-    display: inline-block;
-    margin-top: 12px;
-    text-decoration: none;
-    font-weight: 600;
-    color: #25D366;
-}
-/* ============================= */
-/* ORDER FORM – MOBILE FIX */
-/* ============================= */
-
 .order-form {
     max-width: 720px;
     margin: 30px auto;
@@ -365,37 +262,39 @@ footer {
     box-shadow: 0 18px 45px rgba(0,0,0,0.08);
 }
 
-/* Heading */
 .order-form h2 {
     font-family: 'Playfair Display', serif;
     color: #6A0DAD;
     margin-bottom: 18px;
 }
 
-/* Force vertical layout */
 .order-form form {
     display: flex;
     flex-direction: column;
     gap: 14px;
 }
 
-/* Labels */
 .order-form label {
+    display: block;
     font-size: 0.85rem;
     font-weight: 500;
     color: #444;
 }
 
-/* Inputs */
 .order-form input,
-.order-form textarea {
+.order-form textarea,
+.order-form button {
     width: 100%;
     padding: 14px;
     border-radius: 12px;
     border: 1px solid #ddd;
     font-size: 0.9rem;
-    outline: none;
     background: #fafafa;
+}
+
+.order-form textarea {
+    min-height: 100px;
+    resize: none;
 }
 
 .order-form input:focus,
@@ -405,17 +304,8 @@ footer {
     box-shadow: 0 0 0 3px rgba(106,13,173,0.12);
 }
 
-/* Address box */
-.order-form textarea {
-    min-height: 100px;
-    resize: none;
-}
-
-/* Submit Button */
 .order-form button {
     margin-top: 12px;
-    padding: 15px;
-    border-radius: 14px;
     border: none;
     background: linear-gradient(135deg, #ff8a00, #ff6a00);
     color: #fff;
@@ -423,25 +313,4 @@ footer {
     font-weight: 600;
     cursor: pointer;
     box-shadow: 0 12px 30px rgba(255,138,0,0.35);
-}
-
-/* Remove side-by-side issue */
-.order-form input[type="text"],
-.order-form input[type="number"],
-
-}
-.order-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-
-.order-form label {
-    display: block;
-}
-
-.order-form input,
-.order-form textarea,
-.order-form button {
-    width: 100%;
-}
+    }
