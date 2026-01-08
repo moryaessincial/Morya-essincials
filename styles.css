@@ -430,3 +430,18 @@ footer {
 .order-form input[type="number"],
 
 }
+.order-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.order-form label {
+    display: block;
+}
+
+.order-form input,
+.order-form textarea,
+.order-form button {
+    width: 100%;
+}
