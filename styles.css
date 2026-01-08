@@ -236,7 +236,7 @@ footer {
     .home-hero h1 {
         font-size: 1.6rem;
     }
-    }
+}
 /* ============================= */
 /* CONTACT PAGE – PREMIUM LOOK */
 /* ============================= */
@@ -428,6 +428,5 @@ footer {
 /* Remove side-by-side issue */
 .order-form input[type="text"],
 .order-form input[type="number"],
-.order-form input[type="tel"] {
-    display: block;
+
 }
