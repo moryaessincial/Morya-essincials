@@ -102,11 +102,11 @@ main {
 /* ============================= */
 .home-hero {
     text-align: center;
-    min-height: calc(100vh - 70px);
-    padding: 70px 16px 40px;
+    min-height: 100vh;
+    padding: 120px 16px 40px; /* ⬅ header safe space */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 14px;
 }
