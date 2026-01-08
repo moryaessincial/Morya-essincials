@@ -352,3 +352,82 @@ footer {
     font-weight: 600;
     color: #25D366;
 }
+/* ============================= */
+/* ORDER FORM – MOBILE FIX */
+/* ============================= */
+
+.order-form {
+    max-width: 720px;
+    margin: 30px auto;
+    padding: 24px 20px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+}
+
+/* Heading */
+.order-form h2 {
+    font-family: 'Playfair Display', serif;
+    color: #6A0DAD;
+    margin-bottom: 18px;
+}
+
+/* Force vertical layout */
+.order-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Labels */
+.order-form label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #444;
+}
+
+/* Inputs */
+.order-form input,
+.order-form textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+    outline: none;
+    background: #fafafa;
+}
+
+.order-form input:focus,
+.order-form textarea:focus {
+    border-color: #6A0DAD;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(106,13,173,0.12);
+}
+
+/* Address box */
+.order-form textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+/* Submit Button */
+.order-form button {
+    margin-top: 12px;
+    padding: 15px;
+    border-radius: 14px;
+    border: none;
+    background: linear-gradient(135deg, #ff8a00, #ff6a00);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 12px 30px rgba(255,138,0,0.35);
+}
+
+/* Remove side-by-side issue */
+.order-form input[type="text"],
+.order-form input[type="number"],
+.order-form input[type="tel"] {
+    display: block;
+}
