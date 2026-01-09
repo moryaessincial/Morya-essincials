@@ -314,3 +314,19 @@ footer {
     cursor: pointer;
     box-shadow: 0 12px 30px rgba(255,138,0,0.35);
     }
+/* ============================= */
+/* ORDER MODAL FIX */
+/* ============================= */
+.order-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-modal.active {
+    display: flex;
+}
