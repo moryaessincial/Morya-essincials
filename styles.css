@@ -1,3 +1,12 @@
+:root {
+  --bg-main: #FBF7F2;
+  --text-main: #2E2E2E;
+  --text-accent: #6A1B9A;
+  --btn-main: #F57C00;
+  --btn-hover: #FF9800;
+  --btn-text: #ffffff;
+  --border-main: #f0e6d8;
+}
 /* ============================= */
 /* PREMIUM GOOGLE FONTS */
 /* ============================= */
@@ -331,27 +340,40 @@ footer {
     display: flex;
 }
 .contact-section {
-    background: #FBF7F2;
-    padding: 40px 20px;
+    background: var(--bg-main);
+    padding: 60px 20px;
 }
 
 .contact-card {
     background: #ffffff;
+    max-width: 420px;
+    margin: auto;
+    padding: 30px;
     border-radius: 18px;
-    padding: 25px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    border: 1px solid #f0e6d8;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+    border: 1px solid var(--border-main);
 }
 
 .contact-card h2 {
-    color: #6A1B9A;
+    color: var(--text-accent);
     font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.contact-subtitle {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.contact-card label {
+    font-weight: 500;
+    color: var(--text-main);
 }
 
 .contact-card input,
 .contact-card textarea {
     width: 100%;
-    padding: 12px;
+    padding: 12px 14px;
     border-radius: 10px;
     border: 1px solid #ddd;
     margin-bottom: 15px;
@@ -360,22 +382,23 @@ footer {
 
 .contact-card input:focus,
 .contact-card textarea:focus {
-    border-color: #F57C00;
+    border-color: var(--btn-main);
     outline: none;
 }
 
-.contact-card button {
-    background: linear-gradient(135deg, #F57C00, #FF9800);
-    color: #fff;
+.send-btn {
+    width: 100%;
+    background: linear-gradient(135deg, var(--btn-main), var(--btn-hover));
+    color: var(--btn-text);
     padding: 14px;
     border: none;
     border-radius: 30px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 0 6px 15px rgba(245,124,0,0.4);
+    box-shadow: 0 6px 18px rgba(245,124,0,0.4);
 }
 
-.contact-card button:hover {
+.send-btn:hover {
     transform: translateY(-2px);
 }
