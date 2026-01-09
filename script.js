@@ -3,16 +3,13 @@ function toggleMenu() {
     const menu = document.getElementById('menu');
     menu.classList.toggle('open');
 }
-
-// Order modal
-function openOrderForm(productName) {
-    document.getElementById('product-name').value = productName;
-    document.getElementById('quantity').value = document.querySelector('.quantity').value; // From card
-    document.getElementById('order-modal').style.display = 'block';
+function openOrderPopup(product) {
+  document.getElementById("orderPopup").style.display = "flex";
+  document.getElementById("productName").value = product;
 }
 
-function closeOrderForm() {
-    document.getElementById('order-modal').style.display = 'none';
+function closeOrderPopup() {
+  document.getElementById("orderPopup").style.display = "none";
 }
 
 // Close modal on outside click
