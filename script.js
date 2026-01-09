@@ -22,3 +22,11 @@ window.onclick = function(event) {
         modal.style.display = 'none';
     }
 }
+function openOrder(product) {
+    document.getElementById("orderModal").classList.add("active");
+    document.getElementById("productName").value = product;
+}
+
+function closeOrder() {
+    document.getElementById("orderModal").classList.remove("active");
+}
