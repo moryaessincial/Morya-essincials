@@ -144,34 +144,31 @@ main {
     text-transform: uppercase;
     opacity: 0.65;
 }
-
-/* ============================= */
-/* HERO BUTTONS */
-/* ============================= */
-.hero-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
-    margin-top: 18px;
-}
-
 .hero-buttons a {
-    width: 220px;
-    padding: 15px 0;
-    font-size: 17px;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 14px;
-    background: linear-gradient(135deg, #ff8a00, #ff6a00);
-    color: #fff;
-    box-shadow: 0 10px 25px rgba(255, 138, 0, 0.35);
-    transition: all 0.3s ease;
+  display: inline-block;
+  width: 220px;
+  padding: 14px 0;
+  margin: 12px auto;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+
+  color: #ffffff;
+  background: linear-gradient(135deg, #cfa24d, #b88a2e);
+
+  border-radius: 14px;
+  text-decoration: none;
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  transition: all 0.3s ease;
 }
 
 .hero-buttons a:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 16px 35px rgba(255, 138, 0, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+  background: linear-gradient(135deg, #b88a2e, #a5791f);
 }
 
 /* ============================= */
