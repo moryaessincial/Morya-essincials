@@ -205,6 +205,32 @@
             <label>Quantity: <input type="number" id="quantity" name="Quantity" min="1" required></label>
             <button type="submit" class="btn">Submit Order</button>
         </form>
+        <div id="orderModal" class="order-modal">
+    <div class="order-form">
+        <span onclick="closeOrder()" style="float:right;cursor:pointer;font-size:22px;">✕</span>
+
+        <h2>Place Your Order</h2>
+
+        <form>
+            <label>Full Name</label>
+            <input type="text" required>
+
+            <label>Mobile Number</label>
+            <input type="tel" required>
+
+            <label>Address</label>
+            <textarea required></textarea>
+
+            <label>Product Name</label>
+            <input type="text" id="productName" readonly>
+
+            <label>Quantity</label>
+            <input type="number" min="1" value="1">
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+        </div>
     </div>
 </div>
 
