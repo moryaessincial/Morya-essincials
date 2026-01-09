@@ -191,3 +191,29 @@
         fragrance, and spiritual significance.
     </p>
 </section>
+<!-- ================= ORDER POPUP ================= -->
+<div id="orderPopup" class="order-popup">
+  <div class="order-box">
+    <span class="close-btn" onclick="closeOrderPopup()">×</span>
+
+    <h2>Place Your Order</h2>
+
+    <form id="orderForm">
+
+      <input type="text" id="customerName" placeholder="Full Name" required>
+
+      <input type="tel" id="customerMobile" placeholder="Mobile Number" required>
+
+      <textarea id="customerAddress" placeholder="Full Address" required></textarea>
+
+      <input type="text" id="productName" readonly>
+
+      <input type="number" id="orderQty" min="1" value="1" required>
+
+      <button type="submit" class="btn submit-btn">
+        Send Order
+      </button>
+
+    </form>
+  </div>
+</div>
